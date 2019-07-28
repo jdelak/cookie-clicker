@@ -5,9 +5,10 @@
 	padding:10px;
 }
 
-#multiplicateur{
+#multiplicateur, #autoclicker{
 	width: 200px;
 	height:200px;
 	padding:10px;
 	background-color: yellow;
+	display:inline-block;
 }
