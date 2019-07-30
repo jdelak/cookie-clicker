@@ -10,7 +10,7 @@ $nextBuy = (50 * $compteur);
 $button.onclick = myFunction;
 $multiplicateur.onclick = incrementer;
 $multiplicateur.innerHTML = "Multiplicateur x "+$compteur+" (prochain achat : "+$nextBuy+")";
-$autoclicker.innerTHML = "DPS : "+$compteur;
+$autoclicker.innerHTML = "DPS : "+$compteur;
 $autoclicker.onclick = autoclicker;
 
 

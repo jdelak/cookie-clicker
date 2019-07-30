@@ -1,14 +1,28 @@
-#bouton{
-	background-color: blue;
-	width:100px;
-	height:100px;
-	padding:10px;
+.game-part{
+	display:inline-block;
+	width:570px;
+	vertical-align: top;
 }
+
+#bouton{
+	background:url(scared_bug.jpg) center no-repeat;
+	width:100%;
+	height:500px;
+	border:none;
+	padding:10px;
+	cursor:url('Tapette.png'), auto;
+}
+
+
+#affichage{
+	font-size:30px;
+	color:red;
+}
+
 
 #multiplicateur, #autoclicker{
 	width: 200px;
-	height:200px;
 	padding:10px;
 	background-color: yellow;
-	display:inline-block;
+	display:block;
 }
