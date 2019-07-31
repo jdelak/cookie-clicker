@@ -5,13 +5,21 @@ $autoclicker = document.getElementById("autoclicker");
 $score = 0;
 $compteur = 1;
 $nextBuy = (50 * $compteur);
-//$isAutoclicker = false;
+$acNextbuy = 200;
+$img = document.getElementById("img");
+
 
 $button.onclick = myFunction;
 $multiplicateur.onclick = incrementer;
 $multiplicateur.innerHTML = "Multiplicateur x "+$compteur+" (prochain achat : "+$nextBuy+")";
-$autoclicker.innerHTML = "DPS : "+$compteur;
+$autoclicker.innerHTML = "DPS : "+$compteur+" ("+$acNextbuy+")";
 $autoclicker.onclick = autoclicker;
+
+/*if($score >= (50 * $compteur)){
+	$multiplicateur.disabled = false;
+}else{
+	$multiplicateur.disabled = true;
+}	*/
 
 
 function myFunction(event) { 
@@ -25,12 +33,14 @@ function myFunction(event) {
 function incrementer(event){
 
 	if($score >= (50 * $compteur)){
+		
 		$score = $score - (50 * $compteur);
 		$compteur++;
 		$affichage.innerHTML = $score;
 		$multiplicateur.innerHTML = "Multiplicateur x "+$compteur;
 		$nextBuy = (50 * $compteur);
 		$multiplicateur.innerHTML = "Multiplicateur x "+$compteur+" (prochain achat : "+$nextBuy+")";
+		$autoclicker.innerHTML = "DPS : "+$compteur+" ("+$acNextbuy+")";
 	}
 	
 }
