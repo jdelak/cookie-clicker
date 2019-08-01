@@ -25,9 +25,43 @@
 }
 
 
-#multiplicateur, #autoclicker{
+#multiplicateur, #autoclicker, #birdy-bonus{
 	width: 200px;
 	padding:10px;
 	background-color: yellow;
 	display:block;
+}
+
+#oiseau{
+	position:absolute;
+	top: 0;
+	left: 150px;
+	display:none;
+}
+
+
+
+.explosion {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  pointer-events: none;
+}
+.explosion .particle {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  animation: pop 1s reverse forwards;
+}
+
+@keyframes pop {
+  from {
+    opacity: 0;
+  }
+  to {
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+  }
 }
